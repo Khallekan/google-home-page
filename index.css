@@ -1,0 +1,262 @@
+*,
+*::before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.8rem;
+}
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+}
+.header {
+  height: 4rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.link-grp a {
+  color: #212121;
+  font-size: 0.8rem;
+}
+
+.menu-grp .menu-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.menu-grp .dots,
+.menu-grp .menu-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.menu-grp .dots svg {
+  fill: #5f6368;
+}
+.menu-grp .dots {
+  padding: 8%;
+}
+.menu-grp .dots:hover,
+.menu-grp .menu-btn:hover {
+  background: #f0f0f0;
+}
+
+.menu-grp .menu-btn span {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  background: #455a64;
+  font-weight: 500;
+  font-size: 110%;
+}
+
+.main {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.main .search {
+  border: none;
+  position: relative;
+  width: 45%;
+  height: 3rem;
+  align-self: center;
+}
+
+.search-icon,
+.mic-icon {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search-icon {
+  fill: #9aa0a6;
+  left: 3%;
+}
+.mic-icon {
+  right: 3%;
+  cursor: pointer;
+}
+.search-icon svg,
+.mic-icon svg {
+  height: 100%;
+}
+.search .search-bar {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dfe1e5;
+  border-radius: 50px;
+  outline: none;
+  padding: 0 10%;
+  font-size: 1rem;
+}
+.search .search-bar:hover,
+.search .search-bar:focus {
+  border-color: transparent;
+  box-shadow: 0px 0px 5px #9aa0a6;
+}
+
+.main .btn-grp {
+  width: fit-content;
+  align-self: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5%;
+}
+.btn-grp .btn {
+  width: 9rem;
+  height: 2.5rem;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #f8f9fa;
+  font-size: 0.9rem;
+}
+.btn-grp .btn:hover {
+  border: 1px solid #dfe1e5;
+  border-bottom: 2px solid #dfe1e5;
+}
+.lang-grp {
+  font-size: 0.8rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.lang-grp .lang-typ a {
+  color: #1a0dab;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background: #f2f2f2;
+  width: 100%;
+  padding: 0.8rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 0.95rem;
+}
+.footer .location {
+  border-bottom: 1px solid #dadce0;
+  padding: 0 2rem 0.6rem;
+  display: flex;
+  align-items: center;
+  color: #0000008a;
+}
+.footer .info {
+  padding: 0.6rem 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.info a {
+  color: #0000008a;
+}
+.neutral .neutral-img {
+  width: 8%;
+}
+.nav-info ul,
+.private ul {
+  display: flex;
+  gap: 1.8rem;
+}
+
+@media all and (max-width: 768px) {
+  .header {
+    height: 10vw;
+  }
+  .link-grp a {
+    font-size: 3vw;
+  }
+  .menu-grp .dots,
+  .menu-grp .menu-btn {
+    width: 7vw;
+    height: 7vw;
+  }
+  .menu-grp .menu-btn span {
+    font-size: 3vw;
+  }
+  .main .logo img {
+    width: 50vw;
+  }
+  .main {
+    gap: 5vw;
+  }
+  .main .search {
+    width: 90vw;
+    height: 10vw;
+  }
+  .search-icon {
+    left: 5vw;
+  }
+  .mic-icon {
+    right: 5vw;
+  }
+  .search .search-bar {
+    padding: 0 11vw;
+    font-size: 3.1vw;
+  }
+  .btn-grp .btn {
+    font-size: 2.7vw;
+  }
+  .lang-grp {
+    font-size: 2.5vw;
+  }
+  .footer .info {
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    gap: 5vw;
+    font-size: 3vw;
+  }
+  .info .neutral {
+    order: -1;
+  }
+  .nav-info ul,
+  .private ul {
+    gap: 3vw;
+  }
+}
