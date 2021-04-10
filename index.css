@@ -11,6 +11,11 @@ body {
   height: 100vh;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 ul {
   list-style: none;
 }
@@ -84,7 +89,6 @@ nav ul {
 }
 
 .main {
-  margin-top: 0.9rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -170,8 +174,8 @@ nav ul {
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   background: #f2f2f2;
   width: 100%;
   padding: 0.8rem 0;
@@ -206,7 +210,7 @@ nav ul {
 
 @media all and (max-width: 768px) {
   .header {
-    height: 10vw;
+    height: 8vh;
   }
   .link-grp a {
     font-size: 3vw;
@@ -221,6 +225,7 @@ nav ul {
   }
   .main .logo img {
     width: 50vw;
+    height: auto;
   }
   .main {
     gap: 5vw;
@@ -240,10 +245,15 @@ nav ul {
     font-size: 3.1vw;
   }
   .btn-grp .btn {
+    width: 25vw;
+    height: 5vh;
     font-size: 2.7vw;
   }
   .lang-grp {
     font-size: 2.5vw;
+  }
+  .footer .location {
+    font-size: 3vw;
   }
   .footer .info {
     flex-flow: column nowrap;
