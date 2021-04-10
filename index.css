@@ -174,8 +174,6 @@ nav ul {
 }
 
 .footer {
-  /* position: fixed;
-  bottom: 0; */
   background: #f2f2f2;
   width: 100%;
   padding: 0.8rem 0;
@@ -224,7 +222,7 @@ nav ul {
     font-size: 3vw;
   }
   .main .logo img {
-    width: 50vw;
+    width: 70vw;
     height: auto;
   }
   .main {
